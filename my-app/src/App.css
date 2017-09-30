@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #563d7c;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.styleForm{
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #563d7c;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  color: white;
+  height: 350px;
+}
+
+.styleForm input{
+  width: 100%;
+  height: 50px;
+}
+
+.styleForm .btn{
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+}
+
+
+.listView{
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #563d7c;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  color: white;
+  max-height: 350px;
+  overflow: auto;
+
+}
+
+
+.giveMeSpace{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
