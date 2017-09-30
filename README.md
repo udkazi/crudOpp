@@ -1,16 +1,13 @@
 # crudOpp
 
-1. Clone this App Using Git.
+1.Clone this App Using Git.
+"git clone https://github.com/udkazi/crudOpp.git "
 
- "git clone https://github.com/udkazi/crudOpp.git "
+2.Install node Modules ("make sure that you had installed nodeJs.")
+"sudo npm install"
 
-2. Install node Modules ("make sure that you had installed nodeJs.")
-
-  "sudo npm install"
-
-3. start app.
-
- "npm start"
+3.start app.
+"npm start"
 
 --
 
@@ -31,23 +28,43 @@ open app in browser in localhost://3000
 import  bootstrap file in your app or you can import Bootstrap CDN file.
 https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
 
+
+import React, { Component } from 'react';
+import './App.css';
+import './bootstrap.css';
+
+
 Online Deployed API
 http://gentle-coast-86971.herokuapp.com/movie
 
 Perfrom Crud operatoin with API.
 
+// Add constructor
+
+constructor(props) {
+        super(props);
+        this.state = {
+          iData:[],
+          title:'',
+          flag:true
+
+ }}
+
 //GET Method.
 
-  fetch('http://gentle-coast-86971.herokuapp.com/new', {
-         method: 'GET'
-      })
-      .then((response) => response.json())
-      .then((responseJson) => {
-         console.log(responseJson);
-         this.setState({
-           iData: responseJson
-         })
-      }).
+ componentDidMount = () => {
+      //get Funcationality
+      fetch('http://gentle-coast-86971.herokuapp.com/new', {
+             method: 'GET'
+          })
+          .then((response) => response.json())
+          .then((responseJson) => {
+             console.log(responseJson);
+             this.setState({
+               iData: responseJson
+             })
+          })
+      }
       
     
  //Delete Method.
